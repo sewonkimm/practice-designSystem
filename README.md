@@ -9,11 +9,15 @@ CRA + TS + material UI + storybook 으로 design system 구축하기
 # CRA
 npx create-react-app my-app --template typescript
 
-# Add material UI
+# Install material UI
 yarn add @mui/material @emotion/react @emotion/styled
 
-# Add storybook
+# Install storybook
 npx -p @storybook/cli sb init
+
+# Install Chromatic
+yarn add --dev chromatic
+npx chromatic --project-token={your token} # build 확인
 ```
 
 
